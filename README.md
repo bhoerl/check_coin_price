@@ -6,7 +6,7 @@ Nagios plugin to check the price of various cryptocurrencies (can also be ues st
 `pip install gdax`
 
 ## Usage
-`python configbackup.py --help`
+`python check_coin_price.py --help`
 ```
 usage: check_coin_price.py [-h] [--version] -p
                            {eth_eur,eth_usd,btc_eur,btc_usd,ltc_eur,ltc_usd}
