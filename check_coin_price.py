@@ -56,15 +56,15 @@ def coinprice (currency_pair, warning, critical, moon, perfdata):
 
     if price < critical:
         if perfdata:
-            print "CRITICAL! " + price_msg_perfdata
+            print "CRITICAL: " + price_msg_perfdata
             sys.exit(2)
-        print "CRITICAL! " + price_msg
+        print "CRITICAL: " + price_msg
         sys.exit(2)
     elif price < warning:
         if perfdata:
-            print "WARNING! " + price_msg_perfdata
+            print "WARNING: " + price_msg_perfdata
             sys.exit(1)
-        print "WARNING! " + price_msg
+        print "WARNING: " + price_msg
         sys.exit(1)
     elif moon:
         if price > moon:
@@ -75,10 +75,10 @@ def coinprice (currency_pair, warning, critical, moon, perfdata):
             sys.exit(2)
     
     if perfdata:
-        print "OK " + price_msg_perfdata
+        print "OK: " + price_msg_perfdata
         sys.exit(0)
     else:
-        print "OK " + price_msg
+        print "OK: " + price_msg
         sys.exit(0)
 
 
