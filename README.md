@@ -1,5 +1,5 @@
 # check_coin_price
-Nagios plugin to check the price of various cryptocurrencies (can also be ues stand-alone from cli).<br>
+Nagios plugin to check the price of various cryptocurrencies (can also be used stand-alone from cli).<br>
 (Python Version 2.7)
 
 ## Install required python packages
